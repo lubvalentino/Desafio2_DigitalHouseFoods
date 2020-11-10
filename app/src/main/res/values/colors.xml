@@ -12,4 +12,5 @@
     <color name="button_login_color">#FF5252</color>
     <color name="or_color">#47525E</color>
     <color name="path_color">#C0CCDA</color>
+    <color name="color_primary">#303F9F</color>
 </resources>
