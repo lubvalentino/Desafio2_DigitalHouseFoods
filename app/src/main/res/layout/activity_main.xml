@@ -1,18 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_top_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
     <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_text"
+        android:text="@string/digital_house_foods"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tilemail"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        style="@style/TextInputLayoutDefault"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="@dimen/margin_text"
+        android:layout_marginEnd="@dimen/margin_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        style="@style/TextInputLayoutDefault"
+        app:layout_constraintTop_toBottomOf="@+id/tilemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btLogIn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/margin_text"
+        android:layout_marginEnd="@dimen/margin_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:textSize="21sp"
+        android:textAllCaps="true"
+        android:background="@drawable/custom_login_button"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvOr"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="@dimen/margin_text"
+        android:layout_marginEnd="@dimen/margin_text">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvOr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/or"
+        android:textColor="@color/or_color"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/btLogIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp"/>
+
+    <ImageView
+        android:id="@+id/path_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLogIn"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/path"
+        android:layout_marginEnd="@dimen/margin_text"
+        android:layout_marginStart="@dimen/margin_text"/>
+
+    <ImageView
+        android:id="@+id/path_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLogIn"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/path"
+        android:layout_marginEnd="@dimen/margin_text"
+        android:layout_marginStart="@dimen/margin_text"/>
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="21sp"
+        android:textAllCaps="true"
+        android:background="@drawable/custom_register_button"
+        app:layout_constraintTop_toBottomOf="@id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="@dimen/margin_text"
+        android:layout_marginEnd="@dimen/margin_text">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
