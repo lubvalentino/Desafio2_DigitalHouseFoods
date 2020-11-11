@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_text">20dp</dimen>
+    <dimen name="size_text_title">27sp</dimen>
+    <dimen name="margin_top_title">21dp</dimen>
+    <dimen name="margin_top_email">55dp</dimen>
+    <dimen name="margin_password_email">15dp</dimen>
+    <dimen name="margin_top_login">55dp</dimen>
+    <dimen name="text_size_or">18sp</dimen>
+    <dimen name="margin_top_or">55dp</dimen>
+    <dimen name="margin_top_path">68dp</dimen>
+    <dimen name="margin_top_register">110dp</dimen>
+    <dimen name="margin_button_top">23dp</dimen>
 </resources>

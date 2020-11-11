@@ -21,8 +21,8 @@
         android:layout_marginStart="@dimen/margin_text"
         android:text="@string/digital_house_foods"
         android:textColor="@color/white"
-        android:textSize="27sp"
-        android:layout_marginTop="21dp"
+        android:textSize="@dimen/size_text_title"
+        android:layout_marginTop="@dimen/margin_top_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tilemail"/>
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="@dimen/margin_top_email"
         android:layout_marginStart="@dimen/margin_text"
         android:layout_marginEnd="@dimen/margin_text">
 
@@ -61,7 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btLogIn"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/margin_password_email"
         android:layout_marginStart="@dimen/margin_text"
         android:layout_marginEnd="@dimen/margin_text">
 
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tvOr"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="@dimen/margin_top_login"
         android:layout_marginStart="@dimen/margin_text"
         android:layout_marginEnd="@dimen/margin_text"/>
 
@@ -97,11 +97,11 @@
         android:text="@string/or"
         android:textColor="@color/or_color"
         android:textAllCaps="true"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_or"
         app:layout_constraintTop_toBottomOf="@+id/btLogIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="55dp"/>
+        android:layout_marginTop="@dimen/margin_top_or"/>
 
     <ImageView
         android:id="@+id/path_right"
@@ -110,7 +110,7 @@
         app:layout_constraintStart_toEndOf="@+id/tvOr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btLogIn"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="@dimen/margin_top_path"
         android:background="@drawable/path"
         android:layout_marginEnd="@dimen/margin_text"
         android:layout_marginStart="@dimen/margin_text"/>
@@ -122,7 +122,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tvOr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btLogIn"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="@dimen/margin_top_path"
         android:background="@drawable/path"
         android:layout_marginEnd="@dimen/margin_text"
         android:layout_marginStart="@dimen/margin_text"/>
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvOr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="@dimen/margin_top_register"
         android:layout_marginStart="@dimen/margin_text"
         android:layout_marginEnd="@dimen/margin_text"/>
 
