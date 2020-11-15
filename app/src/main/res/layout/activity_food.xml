@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/fragmentContainerFood"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.FoodActivity"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFood1"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_fastfood_24"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ibBackRestaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_24px"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgroud_recyclerview2"/>
+
+        <TextView
+            android:id="@+id/tvRestautantNameSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tony Roma's"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="11dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pratos principais"
+        android:textColor="@color/food_title"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="19dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFood1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

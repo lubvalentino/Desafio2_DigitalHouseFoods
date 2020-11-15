@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.FoodDetailActivity"
+    android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivFoodDetail1"
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/ic_baseline_fastfood_24" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibBackFoods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_24px"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/backgroud_recyclerview2"/>
+
+
+            <TextView
+                android:id="@+id/tvFoodDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="Salada com molho Gengibre" />
+
+        </FrameLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="28dp"
+        android:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."
+        android:textColor="@color/texto_registro"
+        android:textSize="18sp"/>
+</LinearLayout>

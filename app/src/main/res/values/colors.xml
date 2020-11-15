@@ -13,4 +13,8 @@
     <color name="or_color">#47525E</color>
     <color name="path_color">#C0CCDA</color>
     <color name="color_primary">#303F9F</color>
+    <color name="backgroud_recyclerview">#DDDDDD</color>
+    <color name="backgroud_recyclerview2">#00DDDDDD</color>
+    <color name="restaurant_name_color">#1F2D3D</color>
+    <color name="food_title">#5A6978</color>
 </resources>
