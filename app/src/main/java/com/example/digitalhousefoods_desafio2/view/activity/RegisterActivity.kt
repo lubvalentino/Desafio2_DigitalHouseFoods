@@ -67,7 +67,7 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Password deve ter 6 caracteres", Toast.LENGTH_LONG).show()
             }else{
             if (!validatePassword()){
-                Toast.makeText(this, "Pasword e Repeat password devem ser iguais", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Password e Repeat password devem ser iguais", Toast.LENGTH_LONG).show()
             }else{
             if (etpasswordRegister.length() == 6 && validateEmailFormat()&& etname.length()>0 && validatePassword()){
                 Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_LONG).show()
